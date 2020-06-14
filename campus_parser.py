@@ -29,6 +29,7 @@ def try_use(warning_message="Unknown error", warning_func=None):
         return wrapper
     return actual_decorator
 
+
 """
 def save_info(params, marks, startrow=1):
     df_list = list()
@@ -61,6 +62,7 @@ def save_info(params, marks, startrow=1):
 
     writer.save()
 """
+
 
 class Campus:
 
@@ -109,7 +111,6 @@ class Campus:
                 student_data = [body_info[2 + 5 * i].replace("\n", ""), body_info[3 + 5 * i].replace("\n", "")]
                 self.auth_info.append(student_data)
 
-        # await self.print_logs_passwords()
         return True
 
     @try_use("self.add_log_password() was crashed")
@@ -184,8 +185,6 @@ class Campus:
                         marks.append(int(cols[-2].text))
                     except BaseException:
                         pass
-
-            # get the group name, speciality
 
             self.driver.get(self.stat_url)
 
