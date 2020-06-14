@@ -29,7 +29,7 @@ def try_use(warning_message="Unknown error", warning_func=None):
         return wrapper
     return actual_decorator
 
-
+"""
 def save_info(params, marks, startrow=1):
     df_list = list()
 
@@ -60,7 +60,7 @@ def save_info(params, marks, startrow=1):
         i += 1
 
     writer.save()
-
+"""
 
 class Campus:
 
@@ -71,7 +71,7 @@ class Campus:
 
         self.timeout = 1
 
-        self.driver = None        # webdriver.Chrome(chrome_options=self.options)
+        self.driver = None
         self.driver_status = True
 
         self.auth_info = list()
