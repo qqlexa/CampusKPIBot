@@ -222,5 +222,5 @@ class TelegramBot(object):
 
 
 if __name__ == '__main__':
-    bot = TelegramBot('1283008038:AAGWriN3_a6ibRVkZuiZjehgL-rFLVkgDh8')
+    bot = TelegramBot(TOKEN)
     bot.start()
