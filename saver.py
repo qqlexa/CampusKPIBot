@@ -54,8 +54,8 @@ class Saver:
         else:
             print("Error with writing")
         sheet = writer.book.get_sheet_by_name(speciality)
-        for col_range in range(1, count_max):
-            for row_range in range(1, 4):
+        for col_range in range(1, 4):
+            for row_range in range(1, count_max):
                 cell_title = sheet.cell(row_range, col_range)
                 cell_title.fill = PatternFill(start_color="00FF00", end_color="00FF00", fill_type="solid")
         writer.save()
