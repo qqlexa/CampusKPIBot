@@ -1,6 +1,33 @@
 {
-  "token": "TOKEN",
+  "token": "token",
 
   "personal_delay": 20,
-  "guest_delay": 180
+  "guest_delay": 180,
+
+  "database": {
+    "users": [
+      "CREATE TABLE 'session', (",
+      "'login' TEXT,",
+      "'event_date' TEXT,",
+      "'name_subject' TEXT,",
+      "'type_control' TEXT,",
+      "'statement' TEXT,",
+      "'lecturer' TEXT,",
+      "'mark' TEXT,",
+      "'status' TEXT",
+      ")"
+    ],
+    "profile": [
+      "CREATE TABLE 'my_profile' (",
+      "'login' TEXT,",
+      "'name' TEXT,",
+      "'subhead' TEXT,",
+      "'student_id' TEXT,",
+      "'form_studying' TEXT,",
+      "'course' TEXT,",
+      "'specialty' TEXT,",
+      "'status' TEXT",
+      ")"
+    ]
+  }
 }
